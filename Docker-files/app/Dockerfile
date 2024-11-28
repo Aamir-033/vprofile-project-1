@@ -3,7 +3,7 @@
 FROM maven:3.9.9-eclipse-temurin-21-jammy AS BUILD_IMAGE
 
 # Clone the repository and build the project
-RUN git clone github.com/Aamir-033/vprofile-project-1.git
+RUN git clone https://github.com/Aamir-033/vprofile-project-1.git
 WORKDIR /vprofile-project-1
 RUN git checkout containers && mvn install
 
